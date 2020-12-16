@@ -13,4 +13,8 @@
 @include media-breakpoint-up(lg) {
   @include h1-h6(-lg);
 }
-
+.font {
+  &-xs {
+    font-size: 14px;
+  }
+}

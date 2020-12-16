@@ -1,19 +1,27 @@
 .darker {
-	filter: brightness(0.7);
+  filter: brightness(0.7);
 }
 
 .bg {
-	&-center {
-		background-size: cover;
-		background-position: center;
-		background-repeat: no-repeat;
-	}
+  &-center {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 .img {
-	&-cover {
-		object-fit: cover;
-		background-size: cover;
-		background-position: center center;
-	}
+  &-cover {
+    object-fit: cover;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+.hover {
+  &-bg {
+    &:hover {
+      background-color: #dee2e6;
+    }
+  }
 }

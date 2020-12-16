@@ -74,8 +74,9 @@ $secondary: #d54100 !default;
 $success: $green !default;
 $info: $cyan !default;
 $warning: #f0ad25 !default;
+$star: #f0ad25 !default;
 $danger: $red !default;
-$light: #888888 !default;
+$light: #fafafa !default;
 $dark: $gray-800 !default;
 
 $theme-colors: () !default;
@@ -86,6 +87,7 @@ $theme-colors: map-merge(
     'success': $success,
     'info': $info,
     'warning': $warning,
+    'star': $star,
     'danger': $danger,
     'light': $light,
     'dark': $dark,
@@ -333,16 +335,18 @@ $h2-font-size: $font-size-base * 2 !default;
 $h3-font-size: $font-size-base * 1.75 !default;
 $h4-font-size: $font-size-base * 1.5 !default;
 $h5-font-size: $font-size-base * 1.25 !default;
-$h6-font-size: $font-size-base * 0.875 !default;
-// $h6-font-size: $font-size-base !default;
+// $h6-font-size: $font-size-base * 0.875 !default;
+$h6-font-size: $font-size-base !default;
 
 // $h1-h6
-$h1-h6: (h1: $h1-font-size,
+$h1-h6: (
+  h1: $h1-font-size,
   h2: $h2-font-size,
   h3: $h3-font-size,
   h4: $h4-font-size,
   h5: $h5-font-size,
-  h6: $h6-font-size);
+  h6: $h6-font-size,
+);
 
 $headings-margin-bottom: $spacer / 2 !default;
 $headings-font-family: null !default;
