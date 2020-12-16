@@ -31,4 +31,7 @@ $(document).ready(function () {
 			$(".subscribeEmail").val('')
 		}
 	});
+	$('.datepicker').datepicker()
 });
+
+
