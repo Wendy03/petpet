@@ -25,3 +25,24 @@
     }
   }
 }
+.fix {
+  &-top {
+    &-lg {
+      @include media-breakpoint-up(lg) {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+      }
+    }
+  }
+  &-left {
+    &-lg {
+      @include media-breakpoint-up(lg) {
+        position: fixed;
+        left: 6.64%;
+        z-index: 100;
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.timeline {
+  &-section {
+    position: relative;
+    display: flex;
+    margin-left: 8px;
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background-color: #da3a1a;
+    }
+  }
+  &-point {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    &::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      transform: translate(50%, -25%);
+      background-color: #da3a1a;
+    }
+    &--active {
+      font-weight: bold;
+    }
+  }
+}

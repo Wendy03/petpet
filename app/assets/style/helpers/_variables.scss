@@ -189,6 +189,12 @@ $spacers: map-merge(
     16: (
       $spacer * 5,
     ),
+    17: (
+      $spacer * 5.25,
+    ),
+    18: (
+      $spacer * 5.75,
+    ),
   ),
   $spacers
 );
@@ -355,7 +361,7 @@ $headings-line-height: 1.2 !default;
 $headings-color: null !default;
 
 $display1-size: 6rem !default;
-$display2-size: 5.5rem !default;
+$display2-size: 5rem !default;
 $display3-size: 3rem !default;
 $display4-size: 2.5rem !default;
 // $display3-size: 4.5rem !default;

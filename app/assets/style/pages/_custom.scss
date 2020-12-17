@@ -57,3 +57,37 @@
 .topStore__img {
   height: 128px;
 }
+
+.service {
+  &__item {
+    width: 72px;
+    height: 72px;
+    @include media-breakpoint-up(md) {
+      width: 128px;
+      height: 128px;
+    }
+    &--select {
+      color: $warning;
+      border: 3px solid $secondary;
+    }
+  }
+}
+
+.store {
+  &__img {
+    width: 100px;
+    height: 100px;
+    @include media-breakpoint-up(md) {
+      width: 150px;
+      height: 150px;
+    }
+    @include media-breakpoint-up(lg) {
+      width: 282px;
+      height: 282px;
+    }
+  }
+}
+
+.tab {
+  display: none;
+}

@@ -1,0 +1,26 @@
+.carousel__item--active {
+  margin-bottom: 12px;
+  img {
+    height: 282px;
+    @include media-breakpoint-up(md) {
+      height: 221px;
+    }
+    @include media-breakpoint-up(lg) {
+      height: 440px;
+    }
+  }
+}
+
+.carousel__item {
+  height: 82px;
+  width: 82px;
+  @include media-breakpoint-up(md) {
+    width: 63px;
+    height: 63px;
+  }
+  @include media-breakpoint-up(lg) {
+    height: 96px;
+    width: 96px;
+    margin-right: 8px;
+  }
+}
