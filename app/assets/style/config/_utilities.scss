@@ -46,3 +46,19 @@
     }
   }
 }
+
+.expandArrow {
+  .material-icons {
+    transition: 0.3s all ease;
+  }
+  &[aria-expanded='true'] {
+    .material-icons {
+      transform: rotate(-180deg);
+    }
+  }
+  &[aria-expanded='false'] {
+    .material-icons {
+      transform: rotate(0);
+    }
+  }
+}
