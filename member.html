@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title><%- title %></title>
+    <title>Member</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
@@ -65,7 +65,7 @@
                   >成為寵物保姆</a
                 >
               </li>
-              <% if (title === "Member") { %>
+              
               <li class="nav-item dropdown text-center">
                 <a
                   class="nav-link expandArrow"
@@ -103,23 +103,82 @@
                   >
                 </div>
               </li>
-              <% } else { %>
-              <li class="nav-item">
-                <a class="nav-link text-primary text-center" href="login.html"
-                  >登入</a
-                >
-              </li>
-              <% } %>
+              
             </ul>
           </div>
         </div>
       </nav>
     </header>
 
-    <main role="main" class="flex-shrink-0"><%- contents %></main>
+    <main role="main" class="flex-shrink-0">
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-10">
+      <div class="row vh-100 align-items-center">
+        <div class="col-md-6">
+          <div class="d-flex align-items-center mb-8 mb-md-8 text-primary">
+            <h2 class="font-weight-bold">會員資料</h2>
+            <span class="material-icons">create</span>
+          </div>
+          <div class="d-flex align-items-center mt-3">
+            <img src="./assets/images/person-5.png" alt="..." class="mr-3" />
+            <h4 class="text-primary">Joanne</h4>
+          </div>
+          <ul class="list-unstyled mt-5">
+            <li class="mb-5">
+              <div class="row">
+                <div class="col-3 col-md-4 col-lg-3">電子信箱</div>
+                <div class="col-9 col-md-8 col-lg-9 text-primary">
+                  cycample@gmail.com
+                </div>
+              </div>
+            </li>
+            <li class="mb-5">
+              <div class="row">
+                <div class="col-3 col-md-4 col-lg-3">聯絡電話</div>
+                <div class="col-9 col-md-8 col-lg-9 text-primary">
+                  0912-345-789
+                </div>
+              </div>
+            </li>
+            <li class="mb-5">
+              <div class="row">
+                <div class="col-3 col-md-4 col-lg-3">性別</div>
+                <div class="col-9 col-md-8 col-lg-4 text-primary">女</div>
+              </div>
+            </li>
+            <li>
+              <div class="row">
+                <div class="col-3 col-md-4 col-lg-3">聯絡地址</div>
+                <div class="col-9 col-md-8 col-lg-9 text-primary">
+                  高雄市鹽埕區七賢三路123號
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h3 class="h4 h3-lg mb-4 text-primary font-weight-bold">
+            Hi, Joanne<br />
+            喜歡我們提供的服務嗎？<br />現在你也可以成為寵物保姆囉
+            <span class="d-none d-xl-inline">！</span>
+          </h3>
+          <div class="row mt-8 mt-lg-9">
+            <div class="col-lg-6">
+              <button type="button" class="btn btn-secondary btn-block">
+                下一步
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
 
     <div
-      class="jumbotron jumbotron-fluid bg-warning mt-14 mt-md-15 <%- subscribeDisplay %>"
+      class="jumbotron jumbotron-fluid bg-warning mt-14 mt-md-15 d-none"
       style="z-index: 101"
     >
       <div class="container">
@@ -152,7 +211,7 @@
     </div>
 
     <footer
-      class="footer mt-auto bg-white <%- footerDisplay %>"
+      class="footer mt-auto bg-white d-none"
       style="z-index: 101"
     >
       <div class="container pt-md-14 pb-4">
