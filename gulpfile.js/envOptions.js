@@ -46,7 +46,6 @@ let envOptions = {
       `${nodePath}/jquery/dist/**/jquery.slim.min.js`,
       `${nodePath}/bootstrap/dist/js/**/bootstrap.bundle.min.js`,
       `${nodePath}/swiper/swiper-bundle.min.js`,
-      `${nodePath}/bootstrap-datepicker/dist/js/**/bootstrap-datepicker.js`,
     ],
     concat: 'vendors.js',
     path: `${distPath}/assets/js`,
