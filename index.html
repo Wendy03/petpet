@@ -79,7 +79,7 @@
     </header>
 
     <main role="main" class="flex-shrink-0">
-<div class="container">
+<div class="container position-relative">
   <div
     class="row flex-column flex-lg-row justify-content-center align-items-center"
   >
@@ -99,7 +99,7 @@
       <h4 class="d-lg-none text-primary h5 text-center text-md-left">
         當您的毛孩有需要時，<br />幫您找到最合適的服務者！
       </h4>
-      <form action="" class="mx-3 mb-15">
+      <form action="" class="mx-3 mb-md-15">
         <div class="row d-flex flex-column flex-lg-row">
           <select class="custom-select col-lg-2 mb-2 mb-lg-0">
             <option selected>品種</option>
@@ -123,7 +123,10 @@
           <button type="button" class="btn btn-secondary col-lg-2">搜尋</button>
         </div>
       </form>
-      <div class="d-lg-flex justify-content-lg-end d-none mt-lg-16">
+      <div
+        class="d-lg-flex justify-content-lg-end d-none mt-lg-16 position-absolute"
+        style="right: 15px;"
+      >
         <a href="#popular"
           ><span class="material-icons arrow-down text-secondary display-3">
             arrow_drop_down_circle
@@ -351,7 +354,7 @@
   </p>
   <ul class="row no-gutters list-unstyled flex-md-nowrap">
     <li
-      class="reservation__item card text-white col-md-4 bg-center darker mr-0 mr-md-1 mb-1 mb-md-0s"
+      class="reservation__item card text-white col-md-4 bg-center darker mr-0 mr-md-1 mb-1 mb-md-0"
       style="background-image: url('./assets/images/index-5.jpeg')"
     >
       <a href="boarding.html" class="text-white">
@@ -473,7 +476,7 @@
 </main>
 
     <div
-      class="jumbotron jumbotron-fluid bg-warning mt-14 mt-md-15 d-block"
+      class="jumbotron jumbotron-fluid bg-warning mt-14 mt-md-15 mb-0 d-block"
       style="z-index: 101"
     >
       <div class="container">
@@ -487,14 +490,14 @@
             <div class="input-group mb-3">
               <input
                 type="email"
-                class="form-control border-primary subscribeEmail"
+                class="form-control subscribeEmail"
                 placeholder="example@gmail.com"
                 aria-label="Your email address"
                 aria-describedby="SubscribeBtn"
               />
               <div class="input-group-append">
                 <span
-                  class="btn input-group-text bg-secondary text-white border-primary px-14"
+                  class="btn btn-secondary text-white px-14"
                   id="SubscribeBtn"
                   >送出</span
                 >
