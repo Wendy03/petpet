@@ -3,9 +3,9 @@
 @import '../../../node_modules/bootstrap/scss/mixins';
 @import '../../../node_modules/bootstrap/scss/bootstrap';
 
-@import './config/base';
-@import './config/utilities';
-@import './config/typography';
+@import './base/base';
+@import './base/utilities';
+@import './base/typography';
 
 @import './components/swiper';
 @import './components/carousel';
